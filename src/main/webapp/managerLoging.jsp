@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Test</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<a href="StaffLoging.jsp">Staff Loging</a>
-	<a href="adminLoging.jsp">Admin Loging</a>
-	<a href="managerLoging.jsp">Manager Loging</a>
-	
+
 </body>
 </html>
