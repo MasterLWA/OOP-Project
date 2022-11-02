@@ -14,7 +14,7 @@
 		${staff.firstName}
 		${staff.PhoneNumber}
 		${staff.w_email}
-	<c:forEach>
+	</c:forEach>
 	
 	
 </body>

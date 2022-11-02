@@ -16,8 +16,8 @@ public class staffLogin extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String username = request.getParameter("uname"); //get  values from jsp file
-		String password = request.getParameter("pword");
+		String username = request.getParameter("uname"); //get  values from staffloging.jsp file
+		String password = request.getParameter("pword"); 
 		
 		
 		try {
@@ -26,7 +26,7 @@ public class staffLogin extends HttpServlet {
 		}
 		
 		catch(Exception e) {
-			e.printStackTrace();
+			e.printStackTrace(); //print exception
 		}
 		
 		

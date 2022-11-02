@@ -34,7 +34,7 @@ public class staffDBUtil {
 				 
 				  String sql = "SELECT * FROM staff WHERE staffID='"+username+"' and password='"+password+"'"; //sql query
 				  
-				  ResultSet rs = stmt.executeQuery(sql); //run sql statement
+				  ResultSet rs = stmt.executeQuery(sql); //run sql statement set result to rs 
 				  
 				  if(rs.next()) {
 					  String staffID = rs.getString(1);
@@ -51,7 +51,7 @@ public class staffDBUtil {
 						String hireDate = rs.getString(12);
 						String quiteDate = rs.getString(13);
 						double Salaryl = rs.getDouble(14);
-						int ot_rate = rs.getInt(15);
+						double ot_rate = rs.getDouble(15);
 						String staffCol = rs.getString(16);
 						
 						staff stf = new staff(staffID, Spassword,firstName,lastName,p_email,w_email,

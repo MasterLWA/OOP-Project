@@ -15,13 +15,13 @@ public class staff {
 	private String hireDate;
 	private String quiteDate;
 	private double Salaryl;
-	private int ot_rate;
+	private double ot_rate;
 	private String staffCol;
 	
 	//Constructor for staff class
 	public staff(String staffID, String password, String firstName, String lastName, String p_email, String w_email,
 			String profile_pic, String birthday, String gender, String phoneNumber, String address, String hireDate,
-			String quiteDate, double salaryl, int ot_rate, String staffCol) {
+			String quiteDate, double salaryl, double ot_rate, String staffCol) {
 		super();
 		this.staffID = staffID;
 		this.password = password;
@@ -99,7 +99,7 @@ public class staff {
 		return Salaryl;
 	}
 
-	public int getOt_rate() {
+	public double getOt_rate() {
 		return ot_rate;
 	}
 
