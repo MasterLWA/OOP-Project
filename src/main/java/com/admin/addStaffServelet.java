@@ -1,6 +1,8 @@
 package com.admin;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,8 +35,14 @@ public class addStaffServelet extends HttpServlet {
 		String otrate = request.getParameter("otrate");
 		String staffCol = request.getParameter("staffCol");
 		
+		boolean isTrue; //check data pass true or false
 		
-		
+		isTrue = adminDButil.addStaff(password, fname, lname, pmail, wmail, otrate, bday, gender, pnumber, address, qdate, salary, otrate, staffCol); //is this worked, isTrue get 1
+		 
+		if(isTrue == true) { //navigate if insert is success 
+			RequestDispatcher dis = request.getRequestDispatcher("");
+			dis.forward(request, response);
+		}
 		
 	}
 

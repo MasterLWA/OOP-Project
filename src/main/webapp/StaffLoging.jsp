@@ -7,7 +7,7 @@
 <title>Staff Logging</title> 
 </head>
 <body>
-<form method="post">
+<form method="post" action="staffloging">
 	
 	<input placeholder="Enter Username" id="uname" name="uname" type="text"><br>
 	<input placeholder="Enter Password" id="pword" name="pword" type="password"><br>
