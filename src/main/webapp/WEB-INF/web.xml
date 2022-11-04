@@ -13,11 +13,19 @@
     </servlet>
     <servlet-mapping>
     	 <servlet-name>StaffLoging</servlet-name>
-    	 <url-pattern>/staffloging</url-pattern>
+    	 <url-pattern>/StaffLoging</url-pattern>
     </servlet-mapping>
  
 
-    
+    <servlet>
+        <servlet-name>AddStaff</servlet-name>
+        <servlet-class>com.admin.addStaffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>AddStaff</servlet-name>
+    	 <url-pattern>/AddStaff</url-pattern>
+    </servlet-mapping>
+ 
     
     
 </web-app>

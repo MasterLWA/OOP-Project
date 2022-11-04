@@ -7,13 +7,13 @@
 <title>Add new Employee</title>
 </head>
 <body>
-<form action="#" method="post">
+<form action="AddStaff" method="post">
 <input placeholder="First Name"  name="fname" type="text"><br>
 <input placeholder="Last Name"  name="lname" type="text"><br>
 <input placeholder="Password"  name="password" type="text"><br>
 <input placeholder="personal-email" name="pmail" type="email"><br>
 <input placeholder="Working-email" name="wmail" type="email"><br>
-<input placeholder="profilePic" name="ppic" type="image"><br> <!-- Profile pic -->
+<!-- <input placeholder="profilePic" name="ppic" type="image"><br> --> <!-- Profile pic -->
 <input placeholder="birth-day" name="birthday" type="date"><br>
 <p>Gender</p>
 <input id="male" name="gender" type="radio" value="female">
@@ -29,7 +29,7 @@
 <input placeholder="Salary" name="salary" type="text"><br>
 <input placeholder="OverTime" name="otrate" type="text"><br>
 
-<input placeholder="OverTime" name="otrate" type="text"><br><!-- Staff col -->>
+<input placeholder="OverTime" name="otrate" type="text"><br><!-- Staff col -->
 
 
 

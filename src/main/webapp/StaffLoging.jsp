@@ -12,7 +12,12 @@
 	<input placeholder="Enter Username" id="uname" name="uname" type="text"><br>
 	<input placeholder="Enter Password" id="pword" name="pword" type="password"><br>
 	
-	<input value="Log In" name="submit" type="submit">
+	<input value="LogIn" name="submit" type="submit">
+    
+    <!-- Submit button -->
+	
 </form>
+
+
 </body>
 </html>
