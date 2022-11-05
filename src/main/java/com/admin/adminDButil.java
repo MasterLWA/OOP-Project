@@ -19,7 +19,7 @@ public class adminDButil {
 		boolean ifSuccess = false; //created boolean variable 
 		
 		//create database connection
-		String url ="jdbc:mysql://localhost:3306/osms";
+		String url ="jdbc:mysql://localhost:3306/osms"; 
 		String user ="root"; 
 		String pass = "root1234";
 		
@@ -42,7 +42,7 @@ public class adminDButil {
 			
 		}
 		catch(Exception e) {
-			e.printStackTrace(); //printerror msg
+			e.printStackTrace(); //print error msg
 			
 		}
 		

@@ -39,8 +39,12 @@ public class addStaffServelet extends HttpServlet {
 		
 		isTrue = adminDButil.addStaff(password, fname, lname, pmail, wmail, otrate, bday, gender, pnumber, address, qdate, salary, otrate, staffCol); //is this worked, isTrue get 1
 		 
-		if(isTrue == true) { //navigate if insert is success 
-			RequestDispatcher dis = request.getRequestDispatcher("");
+		if(isTrue == true) { //navigate to sucess if insert is success 
+			RequestDispatcher dis = request.getRequestDispatcher("Success.jsp");
+			dis.forward(request, response);
+		}
+		else { //navigate to unsucess if insert is unsuccess
+			RequestDispatcher dis = request.getRequestDispatcher("Unsuccess.jsp");
 			dis.forward(request, response);
 		}
 		
