@@ -19,7 +19,7 @@
 
     <servlet>
         <servlet-name>AddStaff</servlet-name>
-        <servlet-class>com.admin.addStaffServlet</servlet-class>
+        <servlet-class>com.admin.addStaffServelet</servlet-class>
     </servlet>
     <servlet-mapping>
     	 <servlet-name>AddStaff</servlet-name>
