@@ -29,7 +29,7 @@
 <input placeholder="birth-day" name="birthday" type="date"><br>
 
 <p>Gender</p>
-<input id="male" name="gender" type="radio" value="female">
+<input id="male" name="gender" type="radio" value="male">
 <label for="male">Male</label>
 <input  id="female" name="gender" type="radio" value="female">
 <label for="female">Female</label><br>

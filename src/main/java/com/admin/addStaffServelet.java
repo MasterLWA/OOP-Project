@@ -36,17 +36,21 @@ public class addStaffServelet extends HttpServlet {
 		String staffCol = request.getParameter("staffCol");
 		
 		
+		//convert string to doule
+		double  slry = Double.parseDouble(salary);
+		double  ot = Double.parseDouble(otrate);
+		//int pn = int.parseInt();  //make add phone number correclty
+		
 		boolean isTrue; //check data pass true or false
 		
-		isTrue = adminDButil.addStaff(password, fname, lname, pmail, wmail, otrate, bday, gender, pnumber, address, qdate, salary, otrate, staffCol); //is this worked, isTrue get 1
+		isTrue = adminDButil.addStaff(password, fname, lname, pmail, wmail, propic,bday , gender, pnumber, address, qdate, slry, ot, staffCol); //is this worked, isTrue get 1
 		 
 		if(isTrue == true) { //navigate to sucess if insert is success 
-			RequestDispatcher dis = request.getRequestDispatcher("Success.jsp");
-			dis.forward(request, response);
+			System.out.println("Added");
 		}
 		else { //navigate to unsucess if insert is unsuccess
-			RequestDispatcher dis = request.getRequestDispatcher("Unsuccess.jsp");
-			dis.forward(request, response);
+			System.out.println("not Added");
+			
 		}
 		
 	}

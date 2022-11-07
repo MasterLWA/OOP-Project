@@ -12,6 +12,7 @@ public class DBconnect {
 			
 			public static Connection getConnection() {
 				try{
+					System.out.print("DataBase connection is successful");
 					Class.forName("com.mysql.jdbc.Driver");
 					con = DriverManager.getConnection(url, user, pass);
 				}

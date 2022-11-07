@@ -17,7 +17,7 @@ public class adminDButil {
 	
 	
 	//create method to insert add staffby admin
-	public static boolean addStaff(String password, String firstName, String lastName, String p_email, String w_email, String profile_pic, String birthday, String gender, String phoneNumber, String address,String quiteDate, String salary, String otrate, String staffCol) {
+	public static boolean addStaff(String password, String firstName, String lastName, String p_email, String w_email, String profile_pic, String birthday, String gender, String phoneNumber, String address,String quiteDate, double salary, double otrate, String staffCol) {
 		 
 		boolean ifSuccess = false; //created boolean variable 
 		
@@ -32,7 +32,7 @@ public class adminDButil {
 			//create statement to insert data  into database 
 			 con = DBconnect.getConnection(); //make connection with database using DBconnect class 
 			 stmt = con.createStatement(); 
-			 String sql2 = "INSERT INTO staff (0,'"+password+"','"+firstName+"','"+lastName+"','"+p_email+"','"+w_email+"','"+profile_pic+"','"+birthday+"','"+gender+"','"+phoneNumber+"','"+address+"','','','"+salary+"','"+otrate+"','"+staffCol+"')"; //sql query
+			 String sql2 = "INSERT INTO `osms`.`staff` ( `password`, `firstName`, `lastName`, `p_email`, `w_email`, `profile_pic`, `birthday`, `gender`, `phoneNumber`, `address`,  `quitDate`, `salary`, `ot_rate`, `staffcol`) VALUES ( '"+password+"', '"+firstName+"', '"+lastName+"', '"+p_email+"', '"+w_email+"', NULL, '"+birthday+"' ,'"+gender+"', '"+phoneNumber+"', '"+address+"', '"+quiteDate+"', '"+salary+"', '"+otrate+"', '"+staffCol+"');"; //sql query
 			
 			 int rs = stmt.executeUpdate(sql2); //run statement to run insert quary and assign boolean value to int(rs) variable
 			
