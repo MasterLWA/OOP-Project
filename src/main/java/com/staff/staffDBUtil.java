@@ -11,30 +11,30 @@ import java.util.List;
 
 
 public class staffDBUtil {
+	
+	 private static Connection con = null;
+	 private static Statement stmt = null;
+	 private static ResultSet rs = null;
+	
+	
 		
 	//create list to get staff info
 	public static List<staff> validate(String username,String password){
 		
 		ArrayList<staff> Staf = new  ArrayList<>(); //array object to return staff data 
-		 
-		//create database connection
-			String url ="jdbc:mysql://localhost:3306/osms";
-			String user ="root"; 
-			String pass = "root1234";
 		
 		
-			
-			
 			//validate
 			try {
-				  Class.forName("com.mysql.jdbc.Driver");
+				  
+					//Class.forName("com.mysql.jdbc.Driver");
 				 
-				  Connection con = DriverManager.getConnection(url, user, pass); //make connection with database 
-				  Statement stmt = con.createStatement();
+				   con = staffDBconnect.getConnection(); //make connection with database 
+				   stmt = con.createStatement();
 				 
 				  String sql = "SELECT * FROM staff WHERE staffID='"+username+"' and password='"+password+"'"; //sql query
 				  
-				  ResultSet rs = stmt.executeQuery(sql); //run sql statement set result to rs 
+				 rs = stmt.executeQuery(sql); //run sql statement set result to rs 
 				  
 				  if(rs.next()) {
 					  String staffID = rs.getString(1);

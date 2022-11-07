@@ -7,6 +7,9 @@ import java.sql.Statement;
 
 public class adminDButil {
 	
+	 private static Connection con = null;
+	 private static Statement stmt = null;
+	 private static ResultSet rs = null;
 	
 	
 	
@@ -19,17 +22,19 @@ public class adminDButil {
 		boolean ifSuccess = false; //created boolean variable 
 		
 		//create database connection
-		String url ="jdbc:mysql://localhost:3306/osms"; 
+		/*String url ="jdbc:mysql://localhost:3306/osms"; 
 		String user ="root"; 
-		String pass = "root1234";
+		String pass = "root1234";*/
 		
 		try {
-			//create statement to insert data  into database 
-			Connection con = DriverManager.getConnection(url, user, pass); //make connection with database 
-			Statement stmt = con.createStatement(); 
-			String sql2 = "INSERT INTO staff (0,'"+password+"','"+firstName+"','"+lastName+"','"+p_email+"','"+w_email+"','"+profile_pic+"','"+birthday+"','"+gender+"','"+phoneNumber+"','"+address+"','','','"+salary+"','"+otrate+"','"+staffCol+"')"; //sql query
 			
-			int rs = stmt.executeUpdate(sql2); //run statement to run insert quary and assign boolean value to int(rs) variable
+			
+			//create statement to insert data  into database 
+			 con = DBconnect.getConnection(); //make connection with database using DBconnect class 
+			 stmt = con.createStatement(); 
+			 String sql2 = "INSERT INTO staff (0,'"+password+"','"+firstName+"','"+lastName+"','"+p_email+"','"+w_email+"','"+profile_pic+"','"+birthday+"','"+gender+"','"+phoneNumber+"','"+address+"','','','"+salary+"','"+otrate+"','"+staffCol+"')"; //sql query
+			
+			 int rs = stmt.executeUpdate(sql2); //run statement to run insert quary and assign boolean value to int(rs) variable
 			
 			//get insert update success or no
 			if(rs>0) {
