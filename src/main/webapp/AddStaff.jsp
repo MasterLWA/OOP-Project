@@ -6,7 +6,7 @@
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <meta charset="UTF-8">
-<title>Add new Employee</title>
+<title>Add new Employee</title>         
 </head>
 <body>
 
@@ -42,7 +42,7 @@
 <input placeholder="Salary" name="salary" type="text"><br>
 <input placeholder="OverTime" name="otrate" type="text"><br>
 
-<!-- <input placeholder="OverTime" name="otrate" type="text"><br> <!-- Staff col -->
+<input placeholder="Job Role" name="jrole" type="text"><br> <!-- Staff col -->
 
 
 

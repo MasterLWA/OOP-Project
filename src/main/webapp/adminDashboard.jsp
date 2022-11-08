@@ -10,21 +10,30 @@
 <title>Admin Dashbord</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="text-center">
+            Admin Dashbord
+        </div>
+    </div>
     <div class="container">
         <div class="container row">
-            <div class="col box1"> <!--Add emplooyes-->
-                <a href="AddStaff.jsp">Add New Employee</a>
+            <div class="col box1"> <!--Add employees-->
+            	<h2>Add Employee</h2>
+                <a href="AddStaff.jsp">Add Employee</a>
             </div>
             <div class="col box1">
-
+             <h2>Promote Employee</h2>
+                <a href="#">Promote Employee</a>
             </div>
         </div>
         <div class="container row">
             <div class="col box1">
-
+				<h2>Remove Employee</h2>
+                <a href="#">Remove Employee</a>
             </div>
             <div class="col box1">
-
+				<h2>Edit Employee</h2>
+                <a href="#">Edit Employee</a>
             </div>
         </div>
     </div>

@@ -33,7 +33,7 @@ public class addStaffServelet extends HttpServlet {
 		String qdate = request.getParameter("qdate");
 		String salary = request.getParameter("salary");
 		String otrate = request.getParameter("otrate");
-		String staffCol = request.getParameter("staffCol");
+		String staffCol = request.getParameter("jrole");
 		
 		
 		//convert string to doule
