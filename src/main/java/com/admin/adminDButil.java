@@ -64,9 +64,10 @@ public class adminDButil {
 			 //Update Emp job role
 			 con = DBconnect.getConnection(); //make connection with database using DBconnect class 
 			 stmt = con.createStatement(); 
-			 String sql = "UPDATE osms SET salary ='"+salary+"',ot_rate = '"+otrate+"',staffcol = '"+jobrole+"' WHERE staffID = '"+id+"' "; 	 
+			
+			   String sql = "UPDATE staff SET salary ='"+salary+"',ot_rate = '"+otrate+"',staffcol = '"+jobrole+"' WHERE staffID = '"+id+"' "; 
 					 
-		     int rs1 = stmt.executeUpdate(sql); //run statement to run update quary and assign boolean value to int(rs) variable
+		     int rs1 = stmt.executeUpdate(sql); //run statement to run update quarry and assign boolean value to int(rs) variable
 				
 				//get insert update success or no
 				if(rs1>0) {

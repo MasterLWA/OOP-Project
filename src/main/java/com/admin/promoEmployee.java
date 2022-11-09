@@ -25,6 +25,7 @@ public class promoEmployee extends HttpServlet {
 		String ot_rate = request.getParameter("ot");
 		String job = request.getParameter("Jobrole");
 		
+		
 		int eid = Integer.parseInt(id); 
 		double  slry = Double.parseDouble(salary);
 		double  ot = Double.parseDouble(ot_rate); 
