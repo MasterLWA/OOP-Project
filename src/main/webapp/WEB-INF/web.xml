@@ -28,11 +28,11 @@
     
     
      <servlet>
-        <servlet-name>PromoteEmployee</servlet-name>
+        <servlet-name>promoEmployee</servlet-name>
         <servlet-class>com.admin.promoEmployee</servlet-class>
     </servlet>
     <servlet-mapping>
-    	 <servlet-name>AddStaff</servlet-name>
+    	 <servlet-name>promoEmployee</servlet-name>
     	 <url-pattern>/promote</url-pattern>
     </servlet-mapping>
     

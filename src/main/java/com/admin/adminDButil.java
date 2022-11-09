@@ -21,10 +21,6 @@ public class adminDButil {
 		 
 		boolean ifSuccess = false; //created boolean variable 
 		
-		//create database connection
-		/*String url ="jdbc:mysql://localhost:3306/osms"; 
-		String user ="root"; 
-		String pass = "root1234";*/
 		
 		try {
 			
@@ -33,7 +29,7 @@ public class adminDButil {
 			 stmt = con.createStatement(); 
 			 String sql2 = "INSERT INTO `osms`.`staff` ( `password`, `firstName`, `lastName`, `p_email`, `w_email`, `profile_pic`, `birthday`, `gender`, `phoneNumber`, `address`,  `quitDate`, `salary`, `ot_rate`, `staffcol`) VALUES ( '"+password+"', '"+firstName+"', '"+lastName+"', '"+p_email+"', '"+w_email+"', NULL, '"+birthday+"' ,'"+gender+"', '"+phoneNumber+"', '"+address+"', '"+quiteDate+"', '"+salary+"', '"+otrate+"', '"+staffCol+"');"; //sql query
 			
-			 int rs = stmt.executeUpdate(sql2); //run statement to run insert quary and assign boolean value to int(rs) variable
+			 int rs = stmt.executeUpdate(sql2); //run statement to run insert quarry and assign boolean value to int (rs1) variable
 			
 			//get insert update success or no
 			if(rs>0) {
@@ -55,17 +51,22 @@ public class adminDButil {
 	}
 	
 	
-	//method to Promote job of emplooyee
+	
+	
+	
+	
+	//method to Promote employee
 	public static boolean promoteEmp(int id, String jobrole, double salary,  double otrate) {
+		
 		boolean ifSuccess = false;
 		
 		try {
 			 //Update Emp job role
 			 con = DBconnect.getConnection(); //make connection with database using DBconnect class 
 			 stmt = con.createStatement(); 
-			 String sql2 = "UPDATE `osms`.`staff` SET `salary` ="+salary+",`ot_rate` = "+otrate+",`staffcol` = "+jobrole+" WHERE `staffID` = "+id+"";	 
+			 String sql = "UPDATE osms SET salary ='"+salary+"',ot_rate = '"+otrate+"',staffcol = '"+jobrole+"' WHERE staffID = '"+id+"' "; 	 
 					 
-		int rs1 = stmt.executeUpdate(sql2); //run statement to run update quary and assign boolean value to int(rs) variable
+		     int rs1 = stmt.executeUpdate(sql); //run statement to run update quary and assign boolean value to int(rs) variable
 				
 				//get insert update success or no
 				if(rs1>0) {

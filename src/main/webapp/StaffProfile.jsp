@@ -15,7 +15,5 @@
 		${staff.PhoneNumber}
 		${staff.w_email}
 	</c:forEach>
-	
-	
 </body>
 </html>

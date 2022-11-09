@@ -9,9 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class promoEmployee
- */
+
 @WebServlet("/promoEmployee")
 public class promoEmployee extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -20,7 +18,9 @@ public class promoEmployee extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String id = request.getParameter("id");
+		
+		//get inputs from promoteemployee.jsp
+		String id = request.getParameter("Id");
 		String salary = request.getParameter("salary");
 		String ot_rate = request.getParameter("ot");
 		String job = request.getParameter("Jobrole");
@@ -40,12 +40,11 @@ public class promoEmployee extends HttpServlet {
 			dis.forward(request, response);
 			System.out.println("Updated");
 		}
+		
 		else { //navigate to unsucess if insert is unsuccess
 			RequestDispatcher dis = request.getRequestDispatcher("Unsuccess.jsp");
 			dis.forward(request, response);
 			System.out.println("not Updated");
-			
 		}
 	}
-
 }
