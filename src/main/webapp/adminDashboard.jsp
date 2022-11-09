@@ -33,7 +33,7 @@
             </div>
             <div class="col box1">
 				<h2>Edit Employee</h2>
-                <a href="#">Edit Employee</a>
+                <a href="#">Edit Employee</a>  
             </div>
         </div>
     </div>
