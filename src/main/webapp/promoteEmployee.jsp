@@ -20,7 +20,7 @@
     <input placeholder="Enter Job Role" name="Jobrole" type="text"><br>
     
     <!-- Submit button -->
-	<input type="submit" name="submit" value="Submit">
+	<input type="submit" name="submit" value="Promote">
  
 	</form>
 	
