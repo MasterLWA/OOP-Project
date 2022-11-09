@@ -26,6 +26,16 @@
     	 <url-pattern>/AddStaff</url-pattern>
     </servlet-mapping>
     
+    
+     <servlet>
+        <servlet-name>PromoteEmployee</servlet-name>
+        <servlet-class>com.admin.promoEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>AddStaff</servlet-name>
+    	 <url-pattern>/promote</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
 
 

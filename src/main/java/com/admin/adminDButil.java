@@ -28,7 +28,6 @@ public class adminDButil {
 		
 		try {
 			
-			
 			//create statement to insert data  into database 
 			 con = DBconnect.getConnection(); //make connection with database using DBconnect class 
 			 stmt = con.createStatement(); 
@@ -53,6 +52,35 @@ public class adminDButil {
 		
 		
 		return ifSuccess;
+	}
+	
+	
+	//method to Promote job of emplooyee
+	public static boolean promoteEmp(int id, String jobrole, double salary,  double otrate) {
+		boolean ifSuccess = false;
+		
+		try {
+			 //Update Emp job role
+			 con = DBconnect.getConnection(); //make connection with database using DBconnect class 
+			 stmt = con.createStatement(); 
+			 String sql2 = "UPDATE `osms`.`staff` SET `salary` ="+salary+",`ot_rate` = "+otrate+",`staffcol` = "+jobrole+" WHERE `staffID` = "+id+"";	 
+					 
+		int rs1 = stmt.executeUpdate(sql2); //run statement to run update quary and assign boolean value to int(rs) variable
+				
+				//get insert update success or no
+				if(rs1>0) {
+					ifSuccess = true; //if  it's success 
+				}
+				else {
+					ifSuccess = false; //if it's false 
+				}
+		}
+		catch(Exception e) {
+			e.printStackTrace(); //print error msg
+		}
+		
+		return ifSuccess;
+		
 	}
 
 }
