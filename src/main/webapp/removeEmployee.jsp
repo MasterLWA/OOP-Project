@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="#" method="post">
-		<input placeholder="Enter Id of Employee" name="Jobrole" type="text"><br>
+		<input placeholder="Enter Id of Employee" name="id" type="text"><br>
 		<input type="submit" name="submit" value="Remove">
 	</form>
 </body>
