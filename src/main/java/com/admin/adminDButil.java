@@ -95,6 +95,13 @@ public class adminDButil {
 			 stmt = con.createStatement();
 			 String sql = "SELECT * FROM admin WHERE username='"+username+"' AND admin_password='"+password+"'";
 			 rs = stmt.executeQuery(sql);
+			 
+			 if(rs.next()) {
+				 ifsuccess = true;
+			 }
+			 else {
+				 ifsuccess = false;
+			 }
 		 }
 		 catch(Exception e) {
 			 e.printStackTrace();

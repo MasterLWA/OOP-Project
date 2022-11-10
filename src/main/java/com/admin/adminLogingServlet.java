@@ -21,6 +21,17 @@ public class adminLogingServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		
+		Boolean isTrue = true; 
+		
+		isTrue = adminDButil.validate(username, password);
+		
+		if(isTrue == true) {
+			
+		}
+		else if(isTrue == false) {
+			
+		}
+		
 	}
 
 }
