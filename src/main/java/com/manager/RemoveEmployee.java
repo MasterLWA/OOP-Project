@@ -33,7 +33,8 @@ public class RemoveEmployee extends HttpServlet {
 			dis.forward(request, response);
 			System.out.println("Deleted");
 		}
-		else { //navigate to unsucess if insert is unsuccess
+		
+		else { //navigate to unsucess if update is unsuccess
 			RequestDispatcher dis = request.getRequestDispatcher("Unsuccess.jsp");
 			dis.forward(request, response);
 			System.out.println("Not Deleted");
