@@ -1,5 +1,7 @@
 .box1{
     height: 400px;
-    background-image: linear-gradient(red, yellow);
-
+    height: 400px;
+    border-radius: 30px;
+    background-color: aqua;
+    margin: 20px;
 }

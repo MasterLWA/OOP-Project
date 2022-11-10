@@ -5,37 +5,31 @@
 <head>
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="lib/style.css">
+<style><%@include file="WEB-INF/style.css"%></style>
 <meta charset="UTF-8">
+
 <title>Admin Dashbord</title>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="text-center">
+        <div class="text-center admindb-header" >
             Admin Dashbord
         </div>
     </div>
-    <div class="container">
-        <div class="container row">
-            <div class="col box1"> <!--Add employees-->
-            	<h2>Add Employee</h2>
-                <a href="AddStaff.jsp">Add Employee</a>
+    <div class="container row align-items-center justify-content-center"> 
+       
+            <div class="col-sm-4 box1 "> <!--Add employees-->
+            	<h2 class="box-headers">Add Employee</h2>
+                <a href="AddStaff.jsp" class="links">Add Employee</a>
             </div>
-            <div class="col box1">
-             <h2>Promote Employee</h2>
-                <a href="#">Promote Employee</a>
+            <div class="col-sm-4 box1">
+             <h2 class="box-headers" >Promote Employee</h2>
+                 
+                 <a href="promoteEmployee.jsp" class="links">Promote Employee</a>
             </div>
-        </div>
-        <div class="container row">
-            <div class="col box1">
-				<h2>Remove Employee</h2>
-                <a href="#">Remove Employee</a>
-            </div>
-            <div class="col box1">
-				<h2>Edit Employee</h2>
-                <a href="#">Edit Employee</a>  
-            </div>
-        </div>
+       
+          
+      
     </div>
 
 

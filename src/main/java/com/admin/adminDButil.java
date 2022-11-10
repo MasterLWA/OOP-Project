@@ -111,7 +111,7 @@ public class adminDButil {
 		 
 		 
 		 
-		 
+		 //MVC
 		 return ifsuccess;
 		 
 	 }

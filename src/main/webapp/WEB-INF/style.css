@@ -2,6 +2,76 @@
 .box1{
     height: 400px;
     height: 400px;
-    background-color: aqua;
+    border-radius: 30px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    margin: 20px;
+    
+}
 
+.admindb-header{
+    font-size: 70px;
+    color: lavender;
+     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+     height:100px;
+    
+
+}
+    
+.links{
+    text-decoration: none;
+    color:wheat;
+    font-size: 30px;
+}
+
+.links:hover{
+    text-decoration: underline;
+    font-size: 40px;
+    color: rgb(127, 226, 193);
+}
+
+
+.box-headers{
+    color: lavender;
+    font-size: 50px;
+    text-decoration:bold;
+}
+
+.inputs{
+    border-radius: 10px;
+    border: 2px solid rgb(127, 226, 193);
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.submit-button{
+    border-radius: 10px;
+    border: 2px solid rgb(127, 226, 193);
+    height: 35px;
+    width: 200px;
+    font-size: 20px;
+    color: lavender;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.submit-button:hover{
+    background-color: #008793;
+    height: 40px;
+    width: 220px;
+    Margin-top:10px;
+    
+}
+
+.form{
+    margin: 40px;
+}
+
+
+.form-box{
+    border-radius: 30px;
+    background-color: rgb(127, 226, 193);
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
 }
