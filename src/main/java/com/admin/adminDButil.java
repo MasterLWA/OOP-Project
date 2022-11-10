@@ -85,7 +85,28 @@ public class adminDButil {
 		
 	}
 
+
+
+     //admin loging 
+	 public static boolean validate(String username,String password) {
+		 boolean ifsuccess = false;
+		 try {
+			 con = DBconnect.getConnection();
+			 stmt = con.createStatement();
+			 String sql = "SELECT * FROM admin WHERE username='"+username+"' AND admin_password='"+password+"'";
+			 rs = stmt.executeQuery(sql);
+		 }
+		 catch(Exception e) {
+			 e.printStackTrace();
+		 }
+		 
+		 
+		 
+		 
+		 
+		 
+		 return ifsuccess;
+		 
+	 }
+
 }
-
-
-

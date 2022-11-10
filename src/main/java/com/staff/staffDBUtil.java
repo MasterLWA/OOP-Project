@@ -34,7 +34,7 @@ public class staffDBUtil {
 				 
 				  String sql = "SELECT * FROM staff WHERE staffID='"+username+"' and password='"+password+"'"; //sql query
 				  
-				 rs = stmt.executeQuery(sql); //run sql statement set result to rs 
+				  rs = stmt.executeQuery(sql); //run sql statement set result to rs 
 				  
 				  if(rs.next()) {
 					  String staffID = rs.getString(1);

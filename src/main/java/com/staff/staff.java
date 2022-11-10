@@ -19,10 +19,8 @@ public class staff {
 	private String staffCol;
 	
 	//Constructor for staff class
-	public staff(String staffID, String password, String firstName, String lastName, String p_email, String w_email,
-			String profile_pic, String birthday, String gender, String phoneNumber, String address, String hireDate,
-			String quiteDate, double salaryl, double ot_rate, String staffCol) {
-		super();
+	public staff(String staffID, String password, String firstName, String lastName, String p_email, String w_email,String profile_pic, String birthday, String gender, String phoneNumber, String address, String hireDate,String quiteDate, double salaryl, double ot_rate, String staffCol) {
+		
 		this.staffID = staffID;
 		this.password = password;
 		this.firstName = firstName;
@@ -36,7 +34,7 @@ public class staff {
 		this.address = address;
 		this.hireDate = hireDate;
 		this.quiteDate = quiteDate;
-		Salaryl = salaryl;
+		this.Salaryl = salaryl;
 		this.ot_rate = ot_rate;
 		this.staffCol = staffCol;
 	}
