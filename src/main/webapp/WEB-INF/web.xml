@@ -36,6 +36,15 @@
     	 <url-pattern>/promote</url-pattern>
     </servlet-mapping>
     
+     <servlet>
+        <servlet-name>RemoveEmployee</servlet-name>
+        <servlet-class>com.manager.RemoveEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>RemoveEmployee</servlet-name>
+    	 <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
 
 
