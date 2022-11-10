@@ -1,6 +1,8 @@
 package com.manager;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,6 +24,21 @@ public class RemoveEmployee extends HttpServlet {
 		//string to int
 		int eid = Integer.parseInt(id);
 		
+		
+		boolean isTrue = managerDButil.removeemployee(eid);
+		
+		
+		if(isTrue == true) { //navigate to sucess if insert is success 
+			RequestDispatcher dis = request.getRequestDispatcher("Success.jsp");
+			dis.forward(request, response);
+			System.out.println("Deleted");
+		}
+		else { //navigate to unsucess if insert is unsuccess
+			RequestDispatcher dis = request.getRequestDispatcher("Unsuccess.jsp");
+			dis.forward(request, response);
+			System.out.println("Not Deleted");
+			
+		}
 		
 		
 	}
