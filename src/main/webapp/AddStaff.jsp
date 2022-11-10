@@ -11,9 +11,13 @@
 </head>
 <body>
 
+    <div class="container-fluid">
+        <div class="text-center admindb-header" >
+            Add Staff
+        </div>
+    </div> 
 
-
-<form class="inputs" action="AddStaff" method="post" class="form">
+<form class="inputs container" action="AddStaff" method="post" class="form">
 
 <input class="inputs" placeholder="First Name"  name="fname" type="text"><br>
 
@@ -50,7 +54,7 @@
 
 
 <!-- Submit button -->
-<input type="submit" name="submit" value="Submit">
+<input class="submit-button" type="submit" name="submit" value="Submit">
 
 </form>
 

@@ -28,7 +28,7 @@
     <input class="inputs" placeholder="Enter Job Role" name="Jobrole" type="text"><br>
     
     <!-- Submit button -->
-	<input class="btn-outline-success" type="submit" name="submit" value="Promote">
+	<input class="submit-button" type="submit" name="submit" value="Promote">
  
 	</form>
     </div>
