@@ -8,24 +8,25 @@
 <style><%@include file="WEB-INF/style.css"%></style>
 <meta charset="UTF-8">
 
-<title>manager Dashbord</title>
+<title>Manager Dashbord</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="text-center admindb-header" >
-            Manager Dashbord
+            Manager Dashboard
         </div>
     </div>
     <div class="container row align-items-center justify-content-center"> 
        
             <div class="col-sm-4 box1 "> <!--Add employees-->
-            	<h2 class="box-headers">remove Employee</h2>
+            	<h2 class="box-headers">Remove Employee</h2>
                 <a href="removeEmployee.jsp" class="links">remove Employee</a>
             </div>
+            
             <div class="col-sm-4 box1">
-             <h2 class="box-headers" >View Employee</h2>
+             <h2 class="box-headers">View Employee</h2>
                  
-                 <a href="#" class="links">View Employee</a>
+                 <a href="allEmployees.jsp" class="links">View Employee</a>
             </div>
        
           

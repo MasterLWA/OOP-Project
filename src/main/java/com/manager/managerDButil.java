@@ -10,6 +10,13 @@ public class managerDButil {
 	 private static Statement stmt = null;
 	 private static ResultSet rs = null;
 	 
+	 
+	 
+	 //get employee deatils 
+	 public static boolean viewEmpdetails() {
+		 
+	 }
+	 
 	 //created method to validate manager user name and password and dispatch to Managerdashboard 
 	 
 	 
